@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image:linear-gradient(
+        to right bottom,
+        rgb(255, 166, 0.8),
+        rgba(235, 157, 13, 0.8),
+        rgba(255, 197, 89, 0.8)),
+    url(images/background.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+nav ul{
+    margin-top:30px;
+    float:right;
+    list-style-type:none;
+}
+nav ul li{
+    float:left;
+    margin-right:20px;
+}
+nav ul li a{
+    text-decoration:none;
+    font-size:12pt;
+    font-family:calibri;
+    font-size:13pt;
+    color:#fff;
+}
+nav ul li a:hover{
+    color:#fff;
+    text-decoration:underline;
+}
+.logo-box{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.logo{
+    height: 150px;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    height: 60vh;
+    width: 100vh;
+    background-color: #fff;
+    border: #ffa500 4px solid;
+    border-radius: 80px;
+    text-align: center;
+    color: #f5a904;
+}
+.content h1{
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 30px;
+}
+.content form{
+    font-size: 25px;
+    margin-top: 30px;
+}
+.content form input{
+    border: #f5a904 1px solid;
+    border-radius: 60px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.btn:link , .btn:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    position: relative;
+}
+.btn:hover{
+    transform: translateY(-3px);
+}
+.btn:active{
+    transform: translateY(-1px);
+}
+.btn-orange{
+    background-color: orange;
+    color: white;
+    font-size: 12pt;
+}
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+}
+.btn:hover::after{
+    transform: scaleX(1.5) scaleY(1.5);
+    opacity: 0;
+}
